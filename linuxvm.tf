@@ -6,14 +6,14 @@
 // # - Terraform Block
 // #
 
-// terraform {
-//    required_providers {
-//         azurerm = {
-//             version =   ">= 2.20"
-//            source  =   "hashicorp/azurerm"
-//         }
-//     }
-// }
+ terraform {
+    required_providers {
+         azurerm = {
+             version =   ">= 2.20"
+            source  =   "hashicorp/azurerm"
+         }
+     }
+ }
 
 // #
 // # - Provider Block
