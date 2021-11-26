@@ -7,10 +7,10 @@
 // #
 
 // terraform {
-//     required_providers {
+//    required_providers {
 //         azurerm = {
 //             version =   ">= 2.20"
-//             source  =   "hashicorp/azurerm"
+//            source  =   "hashicorp/azurerm"
 //         }
 //     }
 // }
@@ -19,14 +19,14 @@
 // # - Provider Block
 // #
 
-// provider "azurerm" {
+ provider "azurerm" {
 //     client_id       =   var.client_id
 //     client_secret   =   var.client_secret
 //     subscription_id =   var.subscription_id
 //     tenant_id       =   var.tenant_id
     
-//     features {}
-// }
+     features {}
+ }
 
 
 #
