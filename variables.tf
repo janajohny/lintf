@@ -83,7 +83,7 @@ variable "virtual_machine_size" {
 variable "computer_name" {
     description =   "Computer name"
     type        =   string
-    default     =   "Linuxvm"
+    default     =   "ansiblevm"
 }
 
 variable "admin_username" {
