@@ -1,6 +1,6 @@
 ---
 - name: This sets up an httpd webserver
-  hosts: ansiblevm
+  hosts: tf-linuxvm
   tasks:
   - name: Install apache packages 
     yum:
