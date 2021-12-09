@@ -46,7 +46,7 @@ variable "tags" {
 variable "location" {
     description =   "Location of the resource group"
     type        =   string
-    default     =   "East US"
+    default     =   "eastus2"
 }
 
 # Vnet and Subnet
@@ -77,7 +77,7 @@ variable "allocation_method" {
 variable "virtual_machine_size" {
     description =   "Size of the VM"
     type        =   string
-    default     =   "Standard_B1s"
+    default     =   "Standard_B2ms"
 }
 
 variable "computer_name" {
