@@ -141,15 +141,13 @@ resource "azurerm_linux_virtual_machine" "vm" {
     admin_username                    =   var.admin_username
     admin_password                    =   var.admin_password
     disable_password_authentication   =   false
-    storage_account_type = "Standard_LRS"
-    create_option        = "Empty"
-    disk_size_gb         = "10"
-    #os_disk  {
-    #    name                          =   "${var.prefix}-linuxvm-os-disk"
-    #    caching                       =   var.os_disk_caching
-    #    storage_account_type          =   var.os_disk_storage_account_type
-    #    disk_size_gb                  =   var.os_disk_size_gb
-    #}
+    
+    os_disk  {
+        name                          =   "${var.prefix}-linuxvm-os-disk"
+        caching                       =   var.os_disk_caching
+        storage_account_type          =   var.os_disk_storage_account_type
+        disk_size_gb                  =   var.os_disk_size_gb
+    }
 
     source_image_reference {
         publisher                     =   var.publisher
