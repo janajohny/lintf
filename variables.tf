@@ -98,17 +98,16 @@ variable "admin_password" {
     default     =   "P@$$w0rD2020*"
 }
 
-#variable "os_disk_caching" {
-#    default     =       "ReadWrite"
-#}
+variable "os_disk_caching" {
+    default     =       "ReadWrite"
+}
+variable "os_disk_storage_account_type" {
+    default     =       "Standard_LRS"
+}
 
-#variable "os_disk_storage_account_type" {
-#    default     =       "Standard_HDD"
-#}
-
-#variable "os_disk_size_gb" {
-#    default     =       64
-#}
+variable "os_disk_size_gb" {
+    default     =       64
+}
 
 variable "publisher" {
     default     =       "Canonical"
