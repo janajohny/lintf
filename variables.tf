@@ -103,7 +103,7 @@ variable "os_disk_caching" {
 }
 
 variable "os_disk_storage_account_type" {
-    default     =       "StandardSSD_LRS"
+    default     =       "Standard_HDD"
 }
 
 variable "os_disk_size_gb" {
